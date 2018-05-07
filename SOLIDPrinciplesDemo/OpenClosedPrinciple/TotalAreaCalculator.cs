@@ -18,17 +18,17 @@ namespace SOLIDPrinciplesDemo.OpenClosedPrinciple
             double area = 0;
             foreach (var shape in shapes)
             {
-                if (shape is Rectangle)
+                switch (shape)
                 {
-                    Rectangle rectangle = (Rectangle)shape;
-                    area += rectangle.Width * rectangle.Height;
-                }
-
-                //if we need to add another type, we need to add a new condition
-                if (shape is Circle)
-                {
-                    Circle circle = (Circle)shape;
-                    area += (circle.Radius * circle.Radius) * Math.PI;
+                    case Rectangle _:
+                        var rectangle = (Rectangle)shape;
+                        area += rectangle.Width * rectangle.Height;
+                        break;
+                    //if we need to add another type, we need to add a new condition
+                    case Circle _:
+                        var circle = (Circle)shape;
+                        area += (circle.Radius * circle.Radius) * Math.PI;
+                        break;
                 }
             }
             return area;
