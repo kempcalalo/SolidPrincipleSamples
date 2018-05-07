@@ -5,7 +5,7 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SOLIDPrinciplesDemo.SingleResponsibilityPrinciple.Service_Refactored
+namespace SOLIDPrinciplesDemo.SingleResponsibilityPrinciple.Refactored
 {
     public class EmailService
     {

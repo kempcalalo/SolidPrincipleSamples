@@ -15,7 +15,7 @@ namespace SOLIDPrinciplesDemo.SingleResponsibilityPrinciple
     {
         public void SendInvite(string email, string firstName, string lastName)
         {
-            if (String.IsNullOrWhiteSpace(firstName) || String.IsNullOrWhiteSpace(lastName))
+            if (string.IsNullOrWhiteSpace(firstName) || string.IsNullOrWhiteSpace(lastName))
             {
                 throw new Exception("Name is not valid!");
             }
@@ -24,8 +24,10 @@ namespace SOLIDPrinciplesDemo.SingleResponsibilityPrinciple
             {
                 throw new Exception("Email is not valid!!");
             }
-            SmtpClient client = new SmtpClient("localhost", 25);
-            client.Send(new MailMessage("test@gmail.com", email) { Subject = "Sending a test invite." });
+            var client = new SmtpClient("localhost", 25);
+
+            //Send the email
+            //client.Send(new MailMessage("test@gmail.com", email) { Subject = "Sending a test invite." });
         }
     }
 }

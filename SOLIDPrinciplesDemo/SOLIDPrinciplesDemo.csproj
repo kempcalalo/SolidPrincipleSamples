@@ -42,6 +42,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DependencyInversionPrinciple\EmailNotifier.cs" />
+    <Compile Include="DependencyInversionPrinciple\Refactored\EmailNotifier.cs" />
+    <Compile Include="DependencyInversionPrinciple\Refactored\INotifier.cs" />
+    <Compile Include="DependencyInversionPrinciple\Refactored\SMSNotifier.cs" />
+    <Compile Include="DependencyInversionPrinciple\Refactored\UserManager.cs" />
+    <Compile Include="DependencyInversionPrinciple\UserManager.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\BaseballCap.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\IProduct.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\Jeans.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\Refactored\BaseballCap.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\Refactored\IHat.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\Refactored\IPants.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\Refactored\IProduct.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\Refactored\Jeans.cs" />
+    <Compile Include="LiskovSubstitutionPrinciple\AreaCalculator.cs" />
+    <Compile Include="LiskovSubstitutionPrinciple\Rectangle.cs" />
+    <Compile Include="LiskovSubstitutionPrinciple\Refactored\Quadrilateral.cs" />
+    <Compile Include="LiskovSubstitutionPrinciple\Refactored\Rectangle.cs" />
+    <Compile Include="LiskovSubstitutionPrinciple\Refactored\Square.cs" />
+    <Compile Include="LiskovSubstitutionPrinciple\Square.cs" />
     <Compile Include="OpenClosedPrinciple\Circle.cs" />
     <Compile Include="OpenClosedPrinciple\Rectangle.cs" />
     <Compile Include="OpenClosedPrinciple\Refactored\Circle.cs" />
@@ -53,15 +73,13 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SingleResponsibilityPrinciple\InvitationService.cs" />
-    <Compile Include="SingleResponsibilityPrinciple\Service_Refactored\EmailService.cs" />
-    <Compile Include="SingleResponsibilityPrinciple\Service_Refactored\InvitationService.cs" />
-    <Compile Include="SingleResponsibilityPrinciple\Service_Refactored\UserNameService.cs" />
+    <Compile Include="SingleResponsibilityPrinciple\Refactored\EmailService.cs" />
+    <Compile Include="SingleResponsibilityPrinciple\Refactored\InvitationService.cs" />
+    <Compile Include="SingleResponsibilityPrinciple\Refactored\UserNameService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="LiskovSubstitutionPrinciple\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

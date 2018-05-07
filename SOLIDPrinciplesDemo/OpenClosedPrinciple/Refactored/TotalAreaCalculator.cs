@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace SOLIDPrinciplesDemo.OpenClosedPrinciple.Refactored
 {
-    public class CombinedAreaCalculator
+    /// <summary>
+    /// This will take in any type that is a subset of the type Shape. No need to modify the Area method below
+    /// </summary>
+    public class TotalAreaCalculator
     {
-        public double Area(Shape[] shapes)
+        public double Area(List<Shape> shapes)
         {
             double area = 0;
             foreach (var shape in shapes)
